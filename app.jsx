@@ -1,4 +1,24 @@
-import React, { useState } from "react";
+export default function Home() {
+  return (
+    <main style={{ padding: '20px', fontFamily: 'sans-serif' }}>
+      <h1 style={{ fontSize: '30px', marginBottom: '20px' }}>📊 Hamza Traders – Signal Board</h1>
+
+      <p style={{ marginBottom: '20px' }}>Upload screenshots to your GitHub repo and they will show here.</p>
+
+      <h2>🔥 RSI Heatmap – BTC</h2>
+      <img src="/rsi-btc-20july.png" alt="RSI Heatmap" style={{ width: '100%', borderRadius: '10px' }} />
+
+      <h2 style={{ marginTop: '40px' }}>📈 Long/Short Ratio – ETH</h2>
+      <img src="/longshort-eth.png" alt="Long Short ETH" style={{ width: '100%', borderRadius: '10px' }} />
+
+      <h2 style={{ marginTop: '40px' }}>💣 Liquidation Heatmap</h2>
+      <img src="/liqmap.png" alt="Liquidation Heatmap" style={{ width: '100%', borderRadius: '10px' }} />
+
+      <h2 style={{ marginTop: '40px' }}>🔍 Visual Screener</h2>
+      <img src="/visualscreener.png" alt="Visual Screener" style={{ width: '100%', borderRadius: '10px' }} />
+    </main>
+  );
+}import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
